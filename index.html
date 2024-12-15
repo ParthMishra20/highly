@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lottery DApp</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+	<link href="css/magnific-popup.min.css" rel="stylesheet">
+    <link href="css/tooplate-style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="tm-container-fluid">
+		<!-- Header Section -->
+		<section class="tm-site-header tm-flex-center tm-mb-50 tm-bgcolor-1 tm-border-rounded">
+			<i class="fas fa-ticket-alt fa-3x"></i>
+			<h1>Lottery DApp</h1>
+		</section>
+
+		<!-- About Section -->
+		<section class="tm-about tm-mb-80 tm-p-50 tm-bgcolor-2 tm-border-rounded">
+			<div class="tm-about-header tm-flex-center">
+				<i class="fas fa-info-circle fa-2x"></i>
+				<h2>About the Lottery DApp</h2>
+			</div>
+			<div class="tm-about-text">
+				<p class="tm-mb-40">
+					Welcome to the Lottery DApp platform! This decentralized application allows users to participate in a transparent and fair lottery system powered by blockchain technology.
+					Managers can oversee the lottery, players can enter the draw, and winners are chosen randomly, ensuring fairness and trust.
+				</p>
+				<p class="tm-mb-0">
+					Connect your wallet, join the game by paying the entry fee (1 ETH), and stand a chance to win big! The winner takes 70% of the pool, while the manager gets 30%.
+				</p>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<div class="tm-gallery-section tm-mb-80">
+			<ul class="filters-button-group tm-mb-40">
+				<li><a href="./lottery.html" class="active" data-filter="*">Play</a></li>
+			</ul>
+			<div class="tm-gallery">
+				<div class="tm-gallery-item">
+					<h3>Decentralized & Transparent</h3>
+					<p>All transactions are secured and recorded on the Ethereum blockchain, ensuring transparency and fairness.</p>
+				</div>
+				<div class="tm-gallery-item">
+					<h3>Randomized Winner Selection</h3>
+					<p>Winners are chosen using a secure pseudo-random number generator built into the smart contract.</p>
+				</div>
+				<div class="tm-gallery-item">
+					<h3>Manager Role</h3>
+					<p>Only the designated manager can initiate the lottery and pick the winner, making it an organized process.</p>
+				</div>
+			</div>			
+		</div>
+
+		<!-- Contact Section -->
+		<section class="tm-contact tm-mb-50 tm-bgcolor-3 tm-border-rounded">
+			<div class="tm-contact-header tm-flex-center">
+				<i class="fas fa-envelope fa-3x"></i>
+				<h2>Contact Us</h2>
+			</div>
+			<div class="tm-contact-info">
+				<address class="tm-mb-30">
+					Blockchain Avenue, Decentralized City, ETH 2048
+				</address>
+				<div class="tm-text-white tm-mb-40">
+					Email: <a href="mailto:support@lotterydapp.com" class="tm-link-white">support@lotterydapp.com</a>
+				</div>
+				<div class="tm-flex">
+					<a href="https://facebook.com" class="tm-social-link"><i class="fab fa-facebook"></i></a>
+					<a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter"></i></a>
+					<a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="tm-contact-form-container">
+				<form id="contact-form" action="" method="POST" class="tm-contact-form">
+			          	<input type="text" name="name" placeholder="Name" required="" />
+			          	<input type="email" name="email" placeholder="Email" required="" />
+			          	<textarea rows="5" name="message" class="tm-mb-30" placeholder="Message" required=""></textarea>			          	
+			          	<button type="submit" class="tm-right tm-btn-submit">Send</button>	          	
+			    </form>	    
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<footer class="tm-footer">
+			<p>© 2024 Lottery DApp - Built with Blockchain Technology</p>
+		</footer>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script>
+		$(function(){
+			// Keep gallery script for possible future image gallery addition
+			var $gallery = $(".tm-gallery").isotope({
+				itemSelector: ".tm-gallery-item",
+				layoutMode: "fitRows"
+			});
+		  
+			$gallery.imagesLoaded().progress(function() {
+				$gallery.isotope("layout");
+			});
+		});
+	</script>
+</body>
+</html>
